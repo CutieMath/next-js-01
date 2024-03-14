@@ -7,7 +7,7 @@ const Card = () => {
       <MdSupervisedUserCircle size={24} />
       <div className={styles.texts}>
         <span className={styles.title}>Total Income</span>
-        <span className={styles.number}>1,200,470</span>
+        <span className={styles.number}>1,298,470.68</span>
         <span className={styles.detail}>
           <span className={styles.positive}>12%</span> more than previous
         </span>
