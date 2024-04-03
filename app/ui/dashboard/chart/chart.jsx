@@ -5,7 +5,6 @@ import {
   Line,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
@@ -52,8 +51,8 @@ const data = [
 const Chart = () => {
   return (
     <div className={styles.container}>
-      <h2>Weekly Recap</h2>
-      <ResponsiveContainer width="100%" height="100%">
+      <h2 className={styles.title}>Weekly Recap</h2>
+      <ResponsiveContainer width="100%" height="90%">
         <LineChart
           width={500}
           height={300}
@@ -65,10 +64,9 @@ const Chart = () => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
+          <Tooltip contentStyle={{ background: "#151c2c", border: "none" }} />
           <Legend />
           <Line
             type="monotone"
